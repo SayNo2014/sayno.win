@@ -21,7 +21,7 @@ public class MyServerSocket {
 			System.out.println("message from client : " + line);
 			// 4.创建PrintWrite，用于发送数据
 			PrintWriter pw = new PrintWriter(socket.getOutputStream());
-			pw.write("received data :" + line);
+			pw.write("hello client I'm sayno.win");
 			pw.flush();
 			// 5.关闭资源
 			pw.close();
